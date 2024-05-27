@@ -1,0 +1,5 @@
+# Computational-Finance--Calculating-Option-price-Using-Trinomial-tree-method Trinomial Tree
+In the project we mentioned that a binomial model can be generalized to a trinomial model. In a trinomial model we need to consider three stock price developments: in one period the price increases by a factor of $u$ with the probability $p_u$, descreases by a factor of $d$ with the probability $p_d$, or remains unchanged with the probability $1−p_u −p_d$. The trinomial model can be built in a similar way to the binomial model, e.g., by matching the expectation and the variance and using $ud = 1$ we obtain:
+    $$ u = e^{\sigma\sqrt{2\Delta t}}, \quad d = e^{-\sigma\sqrt{2\Delta t}}, \quad p_d = \left( \frac{ e^{\sigma\sqrt{\frac{\Delta t}{2}}} - e^{r\frac{\Delta t}{2}} }{e^{\sigma\sqrt{\frac{\Delta t}{2}}} - e^{-\sigma\sqrt{\frac{\Delta t}{2}}}} \right)^2, \quad \quad p_u = \left( \frac{ e^{r\frac{\Delta t}{2}} - e^{-\sigma\sqrt{\frac{\Delta t}{2}}}}{e^{\sigma\sqrt{\frac{\Delta t}{2}}} - e^{-\sigma\sqrt{\frac{\Delta t}{2}}}} \right)^2.$$
+
+For the programming task I write the corresponding Python functions that are asked in each section below.
